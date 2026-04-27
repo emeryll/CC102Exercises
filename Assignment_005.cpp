@@ -23,7 +23,6 @@ int main (){
             cout << "Couldn't locate file" << endl;
         }
 
-
     ifstream inFile("original.txt");
 
         if (!inFile.is_open()){
@@ -35,10 +34,9 @@ int main (){
 
         while(getline(inFile, word)){
             words.push_back(word);
-
-        sort(words.begin(), words.end());
-
         }
+
+          sort(words.begin(), words.end());
 
         inFile.close();
 
